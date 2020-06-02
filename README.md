@@ -62,6 +62,10 @@ folder, add a name to the library (`fetched-dog-pictures`), and:
    ],
 ```
 
+A small note: this example allows to structure BuckleScript projects in
+self-contained libraries, which should feel familar for folks that have used
+[dune](https://dune.build).
+
 ## Running the example
 
 _Note_: this repository is set up to consume `bs-platform` using

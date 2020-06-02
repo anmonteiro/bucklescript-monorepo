@@ -1,0 +1,29 @@
+{
+  "name": "reason-react-examples",
+  "reason": {
+    "react-jsx": 3
+  },
+  "sources": {
+    "dir": "src",
+    "subdirs": [
+      "ReasonUsingJSUsingReason",
+      "ReducerFromReactJSDocs",
+      "BlinkingGreeting"
+    ]
+  },
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+    "reason-react",
+    "fetched-dog-pictures"
+  ],
+  "refmt": 3
+}

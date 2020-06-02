@@ -44,21 +44,22 @@ folder, add a name to the library (`fetched-dog-pictures`), and:
 1. Add `"fetched-dog-pictures"` as dependency in `package.json`:
 
 ```diff
-  "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+   "dependencies": {
+     "react": "^16.13.1",
+     "react-dom": "^16.13.1",
 -    "reason-react": ">=0.8.0"
 +    "reason-react": ">=0.8.0",
 +    "fetched-dog-pictures": "link:./src/FetchedDogPictures"
+   }
 ```
 
 2. Add `"fetched-dog-pictures"` as a dependency in the root `bsconfig.json`:
 
 ```diff
-  "bs-dependencies": [
-    "reason-react",
+   "bs-dependencies": [
+     "reason-react",
 +    "fetched-dog-pictures"
-  ],
+   ],
 ```
 
 ## Running the example
@@ -79,3 +80,5 @@ This will start a watcher process and serve a bundle via `webpack-dev-server`.
 
 ## License & Copyright
 
+The code contained within this repository is in the public domain. Consult the
+[LICENSE](./LICENSE) file for more information.

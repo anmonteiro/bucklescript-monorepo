@@ -17,8 +17,8 @@ bs:
 	$(BSB) $(BSB_ARGS)
 
 watch: $(SOURCE_DIRS_JSON)
-	# `entr` exits when the directory changes, so we restart it to pick up
-	# updated files
+	# `entr` exits when the directory contents change, so we restart it to pick
+	# up updated files
 	while true; do \
 		trap 'break' INT; \
 		find -L $$(jq -r 'include "./dirs"; dirs' $(SOURCE_DIRS_JSON)) -maxdepth 1 \
